@@ -1,0 +1,87 @@
+
+/* css codes for mobile phones and tabs as per mobile first approach; this also applies to the big screens unless othewise stated in the media querry */
+.topbar {
+	
+	background-color: aqua;
+}
+
+}
+.lowbar  {
+	background-color: #a7cece;
+	
+}
+.text, .choice,.topbar, .lowbar, .firstimage {
+	width: 100%;
+}
+ 
+.righttext, .lefttext, .niceimages{
+	width: 95%;
+	height: 200px;
+}
+
+.buttomimages {	
+	border-style: solid;
+	border-width: medium;
+	border-color: red;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-right: 5px;
+	
+}
+
+.lefttext {
+	
+	background-color: #efe5d0;
+}
+.righttext {	
+	
+	background-color: #954b4b;
+
+	
+}
+
+p, h2, h5, h6, h3, .highlight {
+	padding-bottom: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-right: 10px;
+}
+a:hover{
+	color: limegreen;
+}
+.options {
+	background-color: #b76666;
+	
+}
+	
+.choice{
+	background-color: #954b4b;
+	
+}
+/* media querry for screen sizes 768px and more*/
+@media only screen and (min-width: 768px) {
+.text, .lowbar {
+	display: flex;
+	
+}
+ 
+.topbar {
+	display: flex;
+	flow-direction: column;
+	justify-content: space-between;
+}
+.lefttext .righttext {
+ 	flex-direction: column;
+
+}
+.righttext {
+	background-color: pink !important;
+}
+.options {
+	display: flex;
+	flex-direction: row;
+
+}
+}
